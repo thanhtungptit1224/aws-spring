@@ -2,9 +2,9 @@ spring:
   server:
     port: 8080
   datasource:
-    url: jdbc:mysql://localhost:3306/myapp?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=false
-    username: root
-    password:
+    url: jdbc:mysql://database-1.cdqtbt8jrlmm.ap-southeast-1.rds.amazonaws.com:3306/myapp?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: admin
+    password: database
     driver-class-name: com.mysql.cj.jdbc.Driver
   quartz:
     job-store-type: jdbc #Database Mode
@@ -34,4 +34,4 @@ spring:
 spring:
   profiles: docker-compose
   datasource:
-    url: jdbc:mysql://mysql:3306/myapp?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=false
+    url: jdbc:mysql://database-1.cdqtbt8jrlmm.ap-southeast-1.rds.amazonaws.com:3306/myapp?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=false
